@@ -1,0 +1,101 @@
+
+@import '../../../styles/variables.scss';
+
+
+.post-component{
+    border: solid 1px $border-color;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom:2rem;
+    width: 100%;
+    box-sizing:border-box;
+
+    @include breakpoint-small{
+        width:calc(50% - 2rem);
+        margin-right: 2rem;
+    }
+
+    @include breakpoint-large{
+        width:calc(33.33% - 2rem);
+    }
+
+   
+
+    .task-text{
+        h2{
+            font-family: $body-font;
+            color: $primary-color;
+        }
+
+        p.status-open strong{
+            color: $danger-color;
+            
+
+            
+        }
+
+        p.status-completed strong{
+            color: $sucess-color;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+    }
+
+    .task-button{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+
+        div{
+            margin-right: 15px;
+
+        }
+
+        button{
+            border: none;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+
+           
+
+            svg{
+                font-size: 35px;
+                margin-right: 10px;
+
+                @include breakpoint-small{
+                    font-size: 33px;
+                }
+
+                @include breakpoint-large{
+                    font-size: 43px;
+                }
+
+            }
+
+            p{
+                font-size: 20px;
+
+                @include breakpoint-small{
+                    font-size: 15px;
+                }
+            }
+
+
+
+           
+
+           
+        }
+
+        
+
+
+    }
+
+
+}

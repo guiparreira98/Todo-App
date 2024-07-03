@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+main.task-list{
+    padding: 2em;
+    background-color: $background-color;
+    display: flex;
+    flex-wrap:wrap;
+
+    h1{
+        margin: 5px;
+
+        @include breakpoint-small{
+            width:100%;
+        }
+    }
+
+
+    @include breakpoint-small{
+        padding-right: 0;
+    }
+
+    .clear-tasks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 1.2rem;
+        width:100%;
+        color:$secondary-color;
+        
+
+        button{
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: $background-color;
+        }
+
+        svg{
+            
+            font-size: 38px;
+            margin-right: 10px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+        
+    }
+}

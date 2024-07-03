@@ -1,0 +1,15 @@
+//Importei do google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+
+// Import variables.scss first
+@import '../styles/variables.scss';
+
+body {
+  margin: 0;
+  font-family: $body-font;
+  color:$text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

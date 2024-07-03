@@ -1,0 +1,16 @@
+@import "../../../styles/variables.scss";
+
+h3{
+    font-weight: 700;
+    color: $primary-color;
+}
+
+.help a{
+
+    display: flex;
+    flex-direction: center;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+
+}

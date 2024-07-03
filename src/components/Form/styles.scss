@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+
+.form-component{
+    padding: 2rem;
+    color: $secondary-color;
+
+
+    @include breakpoint-small{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2{
+        border-bottom: solid 1px black;
+    }
+
+
+    &>div{
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    input[type='text'],select{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        color: $secondary-color;
+        font-size: 22px;
+        border:  solid 1px $border-color;
+        margin-top: 0.3rem;
+    }
+
+    .form-validate{
+        color: $danger-color;
+        border: solid 2px $danger-color;
+        border-left-width: 7px;
+        font-weight: bold;
+        
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 15px;
+        background-color: $background-color;
+        border-radius: 5px;
+        border: solid 1px black;
+
+        svg{
+            margin-right: 6px;
+            font-size: 18px;
+            color: black;
+        }
+    }
+}
